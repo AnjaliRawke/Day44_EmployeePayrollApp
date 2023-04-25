@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll Form</title>
     <link rel="stylesheet" href="css/EmployeePayroll.css">
-    <script defer src="Payroll_Form.js"></script>
+    <script type="text/javascript" src="EmployeePayroll.js"></script>
+    <script type="text/javascript" src="Payroll_Form.js"></script>
 </head>
 <body>
     <!-- UC1 -->
@@ -19,12 +20,13 @@
             </div>
         </div>
     </header>
-    <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event);return false">
+    <div id="formId" class="form-content">
+        <form class="form" action="#" onreset="resetform()" onsubmit="save(event)">
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
                 <label class="label text" for="name">Name</label>
                 <input class="input" type="text" id="name" name="name" placeholder="Enter Your name " required>
+                <error-output class="text-error" for="text"></error-output>
             </div>
             <div class="row-content">
                 <label class="label text"for="profile">Profile image </label>
