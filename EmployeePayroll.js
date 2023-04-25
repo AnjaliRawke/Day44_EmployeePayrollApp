@@ -86,4 +86,5 @@ class EmployeePayrollData{
                ", profilePic='" +this.profilePic+", department="+this.department+
                ", salary=" +this.salary+", startDate="+empDate +", note="+this.note;              
     }
+
 }
